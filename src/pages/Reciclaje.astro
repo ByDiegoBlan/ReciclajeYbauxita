@@ -6,16 +6,22 @@ import Header from "../components/Header.astro";
 <Layout>
     <Header />
     <main class="text-white mt-10 p-4 bg-gray-900">
-        <section id="reciclaje" class="p-4 flex gap-8 flex-col mt-20">
-            <div class="flex items-center justify-evenly w-full gap-8">
-                <div class="w-2/3 max-w-[500px] flex flex-col gap-8">
-                    <div class="flex gap-4">
-                        <img src="./images/recycle.svg" class="w-16 h-16" />
-                        <h1 class="text-4xl font-bold text-green-400">
+        <section id="reciclaje" class="p-4 flex flex-col gap-8 mt-20">
+            <div
+                class="flex flex-col lg:flex-row items-center justify-center w-full gap-8"
+            >
+                <div class="w-full lg:w-2/3 max-w-[500px] flex flex-col gap-8">
+                    <div class="flex gap-4 items-center">
+                        <img src="./images/recycle.svg" class="w-14 h-14" />
+                        <h1
+                            class="text-3xl lg:text-4xl font-bold text-green-400"
+                        >
                             Proceso de Reciclaje
                         </h1>
                     </div>
-                    <p class="text-lg border-l-4 border-zinc-100 pl-5">
+                    <p
+                        class="text-base lg:text-lg border-l-4 border-zinc-100 pl-5"
+                    >
                         El reciclaje del aluminio implica su recolección,
                         limpieza, fundición y reutilización. Este proceso reduce
                         significativamente la necesidad de extraer bauxita, el
@@ -25,15 +31,17 @@ import Header from "../components/Header.astro";
                 </div>
                 <img
                     src="./images/recycling-process.jpg"
-                    class="size-72 object-cover rounded-md"
+                    class="w-full lg:size-72 object-cover rounded-md"
                 />
             </div>
 
             <div class="text-center w-full mt-10">
-                <h2 class="text-3xl font-bold text-indigo-400 pb-3">
+                <h2 class="text-2xl lg:text-3xl font-bold text-indigo-400 pb-3">
                     Aluminio Primario vs Reciclado
                 </h2>
-                <p class="text-lg px-5 max-w-3xl mx-auto leading-relaxed">
+                <p
+                    class="text-base lg:text-lg px-5 max-w-3xl mx-auto leading-relaxed"
+                >
                     El aluminio reciclado tiene la ventaja de ser mucho más
                     eficiente y ecológico en comparación con el aluminio
                     primario. Su producción ahorra hasta un 95% de la energía
@@ -44,10 +52,12 @@ import Header from "../components/Header.astro";
             </div>
 
             <div class="text-center w-full mt-10">
-                <h2 class="text-3xl font-bold text-indigo-400 pb-3">
+                <h2 class="text-2xl lg:text-3xl font-bold text-indigo-400 pb-3">
                     Beneficios del Reciclaje y Situación en México
                 </h2>
-                <p class="text-lg px-5 max-w-3xl mx-auto leading-relaxed">
+                <p
+                    class="text-base lg:text-lg px-5 max-w-3xl mx-auto leading-relaxed"
+                >
                     El reciclaje de aluminio ofrece múltiples beneficios, como
                     la reducción de la huella de carbono, el ahorro de energía y
                     la conservación de los recursos naturales. En México, el

@@ -1,0 +1,119 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout>
+    <Header />
+    <main class="text-white mt-10 p-4">
+        <section id="reservas-geopolitica" class="p-4 flex gap-4 flex-col">
+            <div
+                class="flex items-center justify-evenly w-full p-4 box-border gap-4"
+            >
+                <div class="w-2/3 max-w-[500px] flex flex-col gap-8">
+                    <div class="flex gap-4">
+                        <img src="./images/world-map.svg" class="w-16 h-16" />
+                        <h1 class="text-4xl font-bold text-indigo-500">
+                            Reservas de Bauxita y Geopolítica
+                        </h1>
+                    </div>
+                    <p class="text-lg border-l-4 border-purple-400 pl-5">
+                        La <strong class="text-gray-400">bauxita</strong> es la principal
+                        fuente de aluminio y se encuentra concentrada en países como
+                        <span class="text-blue-400 font-semibold"
+                            >Australia, Guinea y Brasil</span
+                        >. El control de estas reservas ha tenido un impacto
+                        directo en las dinámicas geopolíticas y económicas a
+                        nivel mundial. La hegemonía sobre estos recursos se
+                        convierte en un factor clave en el nuevo escenario
+                        geopolítico.
+                    </p>
+                </div>
+                <img
+                    src="./images/earth-globe.jpg"
+                    class="size-80 w-1/3 object-cover rounded-md"
+                />
+            </div>
+
+            <div class="text-center w-full">
+                <h2 class="text-3xl font-bold text-teal-500 pb-3">
+                    Neocolonialismo y Control de Bauxita
+                </h2>
+                <p class="text-lg">
+                    A medida que las reservas de bauxita se vuelven más escasas,
+                    el control sobre ellas ha estado en manos de grandes
+                    potencias y empresas multinacionales. Esto refleja un
+                    fenómeno de <span class="text-red-400">neocolonialismo</span
+                    >, donde las naciones con recursos se ven dependientes de
+                    los intereses de las potencias extranjeras.
+                </p>
+            </div>
+
+            <ul class="flex p-4">
+                <li
+                    class="w-1/3 p-4 box-border text-center flex flex-col justify-evenly gap-2 items-center"
+                >
+                    <div class="flex flex-col">
+                        <h3 class="font-bold text-xl text-blue-400">
+                            Australia
+                        </h3>
+                        <p>Es el principal productor mundial de bauxita.</p>
+                    </div>
+                    <img src="./images/australia.svg" class="w-12 h-12" />
+                </li>
+                <li
+                    class="w-1/3 p-4 box-border text-center flex flex-col justify-evenly gap-2 items-center"
+                >
+                    <div>
+                        <h3 class="font-bold text-xl text-yellow-400">
+                            Guinea
+                        </h3>
+                        <p>
+                            Cuenta con las reservas más grandes de bauxita en
+                            África.
+                        </p>
+                    </div>
+                    <img src="./images/guinea.svg" class="w-12 h-12" />
+                </li>
+                <li
+                    class="w-1/3 p-4 box-border text-center flex flex-col justify-evenly gap-2 items-center"
+                >
+                    <div>
+                        <h3 class="font-bold text-xl text-green-400">Brasil</h3>
+                        <p>
+                            Es un actor clave en la producción de bauxita a
+                            nivel global.
+                        </p>
+                    </div>
+                    <img src="./images/brazil.svg" />
+                </li>
+            </ul>
+
+            <div class="flex items-center justify-evenly">
+                <div class="w-2/3 max-w-[450px] flex flex-col gap-5">
+                    <div class="flex gap-3">
+                        <img src="./images/global-impact.svg" />
+                        <h2 class="text-2xl font-bold text-red-600">
+                            Impacto Geopolítico del Control de Bauxita
+                        </h2>
+                    </div>
+                    <p class="border-l-4 border-purple-400 pl-5">
+                        El control sobre las reservas de bauxita ha dado lugar a
+                        tensiones entre potencias económicas. Los países que
+                        poseen grandes reservas de este recurso se convierten en
+                        actores fundamentales en las políticas internacionales.
+                        El aluminio es vital en sectores como la aviación, la
+                        automoción y la energía, lo que incrementa su valor
+                        geopolítico.
+                    </p>
+                </div>
+                <div class="w-1/3">
+                    <img
+                        src="./images/bauxita.jpeg"
+                        class="w-full rounded-md"
+                    />
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>

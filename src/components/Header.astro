@@ -15,20 +15,20 @@
 
     <ul
         id="menu"
-        class="hidden lg:flex flex-col lg:flex-row gap-4 lg:gap-4 absolute lg:static top-20 left-0 w-full lg:w-auto bg-zinc-900 lg:bg-transparent p-4 lg:p-0"
+        class="hidden justify-around flex-row lg:flex lg:flex-row gap-4 lg:gap-4 absolute lg:static top-20 left-0 w-full lg:w-auto bg-zinc-900 lg:bg-transparent p-4 lg:p-0"
     >
         <li
-            class="font-bold text-lg pr-4 hover:text-amber-400 text-center lg:text-left"
+            class="font-bold text-lg p-2 lg:pr-4 hover:text-amber-400 text-center lg:text-left"
         >
             <a href="/">Inicio</a>
         </li>
         <li
-            class="font-bold text-lg pr-4 hover:text-amber-400 text-center lg:text-left"
+            class="font-bold text-lg p-2 lg:pr-4 hover:text-amber-400 text-center lg:text-left"
         >
             <a href="/Reciclaje">Reciclaje</a>
         </li>
         <li
-            class="font-bold text-lg pr-4 hover:text-amber-400 text-center lg:text-left"
+            class="font-bold text-lg p-2 lg:pr-4 hover:text-amber-400 text-center lg:text-left"
         >
             <a href="/Reservas-y-geopolitica">Reservas y geopolitica</a>
         </li>
@@ -40,6 +40,12 @@
     const menu = document.getElementById("menu");
 
     menuBtn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
+        if (menu.classList.contains("hidden")) {
+            menu.classList.remove("hidden");
+            menu.classList.add("flex");
+        } else {
+            menu.classList.remove("flex");
+            menu.classList.add("hidden");
+        }
     });
 </script>
